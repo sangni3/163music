@@ -14,7 +14,7 @@ module.exports = defineConfig({
     https: false, //是否使用https协议
     proxy: {
       '/api': {
-        target: 'http://localhost:8080',
+        target: 'https://netease-cloud-music-api-sangni3.vercel.app',
         ws:true,
         changeOrigin: true,
         pathRewrite: {

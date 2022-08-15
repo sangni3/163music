@@ -8,7 +8,7 @@
           label-width="80px"
         >
           <div class="logboximg">
-            <img src="../assets/logo.png" />
+            <img src="../../public/logo.png" />
           </div>
 
           <el-form-item label="手机号">

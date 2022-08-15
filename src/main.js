@@ -17,6 +17,8 @@ Vue.prototype.$http = axios
 //         "Content-Type": "application/json;charset=utf-8",
 //     },
 // });
+
+
 axios.defaults.baseURL = 'https://netease-cloud-music-api-sangni3.vercel.app'
 axios.defaults.headers = { 'Content-Type': 'application/x-www-form-urlencoded' }
 
