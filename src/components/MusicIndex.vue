@@ -1,7 +1,6 @@
 <template>
   <div class="index-container">
     <!-- 导航区域 -->
-
     <div class="nav">
       <el-row class="tac">
         <el-col :span="20">
@@ -57,13 +56,13 @@
         </el-col>
       </el-row>
     </div>
-
     <!-- 主体区域 -->
     <div class="main">
-      <router-view></router-view>
+      <keep-alive>
+        <router-view></router-view>
+      </keep-alive>
     </div>
     <!-- 播放标签 -->
-
     <div class="player">
       <!-- autoplay 自动播放 -->
       <div class="player_box">
