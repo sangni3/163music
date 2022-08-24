@@ -3,43 +3,38 @@
     <!-- 导航区域 -->
     <div class="nav">
       <el-row class="tac">
-        <el-col :span="20">
+        <el-col :span="24">
           <el-menu
             default-active="1"
             class="nav"
             active-text-color="#dd6d60"
-            background-color="#ededed"
             text-color="#303133"
           >
             <router-link to="/DiscoverMusic">
               <el-menu-item index="1">
-                <span class="el-icon-s-home"></span>
                 发现音乐
+              </el-menu-item>
+            </router-link>
+            <router-link to="/LatestMusic">
+              <el-menu-item index="3">
+                最新音乐
               </el-menu-item>
             </router-link>
             <router-link to="/RecommendedMusic">
               <el-menu-item index="2">
                 <li>
-                  <span class="el-icon-present"></span>
-                  推荐歌单
+                  歌单
                 </li>
               </el-menu-item>
             </router-link>
-            <router-link to="/LatestMusic">
-              <el-menu-item index="3">
-                <span class="el-icon-news"></span>
-                最新音乐
-              </el-menu-item>
-            </router-link>
+
             <router-link to="/LatestMV">
               <el-menu-item index="4">
-                <span class="el-icon-video-camera-solid"></span>
-                最新MV
+                视频
               </el-menu-item>
             </router-link>
             <el-submenu index="5">
               <template slot="title">
-                <i class="el-icon-user"></i>
                 <span>我创建的歌单</span>
               </template>
 
@@ -58,7 +53,7 @@
     </div>
     <!-- 主体区域 -->
     <div class="main">
-      <keep-alive>
+      <keep-alive><!-- 避免重复渲染-->
         <router-view></router-view>
       </keep-alive>
     </div>
@@ -128,4 +123,24 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.el-menu {
+  border-right:none!important;
+  margin-top: 10px!important;
+  margin-left: 10px!important;
+  width: 180px;
+}
+.el-menu-item.is-active {
+  color: #303133!important;
+
+  background-color: #ccc8c83d;
+  font-weight: 1000;
+  border-radius:5px ;
+}
+.el-menu-item, .el-submenu__title {
+  height: 40px!important;
+  line-height: 40px!important;
+  padding-left: 10px!important;
+  margin-top: 5px!important;
+}
+</style>

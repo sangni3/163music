@@ -1,13 +1,13 @@
 <template>
   <div class="discovery-container">
     <!-- 轮播图 -->
-    <el-carousel class="" :interval="4000" type="card">
+    <el-carousel class="banner" :interval="4000" type="card">
       <!-- 循环获取到的接口数据 -->
       <el-carousel-item v-for="(item, index) in banners" :key="index">
         <!--广告跳转链接为null-->
         <a
           target="_blank"
-          :href="item.url == null ? 'http://sangni.top/'  : item.url"
+          :href="item.url == null ? 'https://music.163.com/'  : item.url"
           ><img :src="item.imageUrl" alt="推荐广告信息"
         /></a>
       </el-carousel-item>

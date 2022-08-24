@@ -14,8 +14,6 @@
         <el-button   icon=" el-icon-arrow-left" circle></el-button>
         <el-button   icon=" el-icon-arrow-right" circle></el-button>
       </div>
-
-
       <div class="el-input el-input--small el-input--prefix">
         <!-- 搜索框 -->
         <input
@@ -35,7 +33,7 @@
       <div class="right-box-img">
         <img v-if="islogin" :src='avator' alt="" />
 <!--        <a  v-if="!islogin" @click="login" >登录</a>-->
-        <el-button type="text" v-if="!islogin" @click="centerDialogVisible = true"
+        <el-button type="text" v-if="!islogin" @click="centerDialogVisible = true" style="color: black"
         >登录</el-button>
       </div>
       <div v-if="islogin"  class="right-user">
@@ -53,7 +51,7 @@
       </div>
 
     </div>
-    <el-dialog   :visible.sync="centerDialogVisible"  title="登录" width="30%" center>
+    <el-dialog   :visible.sync="centerDialogVisible"  title="登录" width="30%"  center>
       <el-form
           ref="loginuserlistref"
           :model="loginuserlist"

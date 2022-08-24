@@ -1232,13 +1232,11 @@ ol {
   display: flex;
 }
 
-.index-container .nav {
-  background-color: #ededed;
+.index-container >:first-child {
+  background-color: white;
   width: 200px;
   height: 100%;
-
-
-
+  border-right: 1px solid #cfcccc;
 }
 @media (max-width: 600px) {
 
@@ -1297,18 +1295,18 @@ ol {
 
 .index-container .player {
   background: #f1f3f4;
-  height: 60px;
+  height: 65px;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  margin: 5px;
+  border-top: 1px solid #cfcccc;
 }
 
 .index-container audio {
   width: 100%;
-  border-radius: none;
   outline: none;
+  margin-top: 5px;
 }
 
 .top-container {
@@ -1503,6 +1501,16 @@ padding-top: 0px;
 .el-form-item .el-input__inner {
   height: 32px;
   line-height: 32px;
-
 }
-
+.el-input__inner{
+  background-color: #d53f41;
+  border-radius: 20px;
+  border: none;
+}
+.banner{
+  top: 40px;
+}
+.recommend{
+  position: relative;
+  top: 45px;
+}
