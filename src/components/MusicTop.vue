@@ -233,5 +233,10 @@ export default {
 .el-form-item__label{
   height: 32px;
 }
+.el-input--prefix .el-input__inner {
+  background-color: #d53f41;
+  border-radius: 20px;
+  border: none;
+}
 
 </style>
